@@ -1,22 +1,23 @@
+#pragma once
 #pragma
 // LAB 6 SHAFIE,Nima W
-#ifndef BALROG_H
-#define BALROG_H
-#include "Demon.h"
+#ifndef HUMAN_H
+#define HUMAN_H
+#include "Creature.h"
 
 #include <iostream>
 
-class Balrog : public Demon {					// Balrog is a dervied class of Creature
+class Human : public Creature {		// Human is a dervied class of Creature
 private:
-	int strength;									// how much damage we can inflict
-	int hitpoints;									// how much damage we can sustain
-	string getSpecies();							// returns type of species
+	int strength;           // how much damage we can inflict
+	int hitpoints;          // how much damage we can sustain
+	string getSpecies();    // returns type of species
 public:
 	// constructors/destructors
-	Balrog();									// default constructor
-	Balrog(int newStrength, int newHit);		// 2 argument constructor
-	Balrog(const Balrog& copyFromCreature);		// copy constructor
-	~Balrog();									// destructor
+	Human();									// default constructor
+	Human(int newStrength, int newHit);			// 2 argument constructor
+	Human(const Human& copyFromCreature);	// copy constructor
+	~Human();								// destructor
 
 	// accessor functions
 	int getStrength() const;			// gets strength member variable of creature
