@@ -1,5 +1,5 @@
 #pragma
-// LAB 6 SHAFIE,Nima W
+// LAB 7 SHAFIE,Nima W
 #include <iostream>
 #include <string>
 #include "Balrog.h"

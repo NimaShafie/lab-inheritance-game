@@ -1,4 +1,4 @@
-// LAB 6 SHAFIE,Nima W
+// LAB 7 SHAFIE,Nima W
 #include <iostream>
 #include <string>
 #include "Creature.h"
@@ -79,7 +79,7 @@ int main()
 	}
 	delete[]creatureArray;
 
-	cout << "\nNow program terminates (destructors should not run past this line)\n" << endl;
+	cout << "\nNow program terminates (2 argument destructors will run past this line)\n" << endl;
 
 	return 0;
 }

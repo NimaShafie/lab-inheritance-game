@@ -1,5 +1,5 @@
 #pragma
-// LAB 6 SHAFIE,Nima W
+// LAB 7 SHAFIE,Nima W
 #ifndef BALROG_H
 #define BALROG_H
 #include "Demon.h"

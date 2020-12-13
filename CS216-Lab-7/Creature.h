@@ -1,5 +1,5 @@
 #pragma
-// LAB 6 SHAFIE,Nima W
+// LAB 7 SHAFIE,Nima W
 #ifndef CREATURE_H
 #define CREATURE_H
 
@@ -16,7 +16,7 @@ public:
 	Creature();									// default constructor
 	Creature(int newStrength, int newHit);		// 2 int constructor (creates creature object with strength and hitpoints given in argument)
 	Creature(const Creature& copyFromCreature);	// copy constructor
-	~Creature();								// destructor
+	virtual ~Creature() = 0;					// destructor
 
 	// accessor functions
 	int getStrength() const;					// gets strength member variable of creature

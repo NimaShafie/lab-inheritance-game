@@ -1,6 +1,6 @@
 #pragma once
 #pragma
-// LAB 6 SHAFIE,Nima W
+// LAB 7 SHAFIE,Nima W
 #ifndef ELF_H
 #define ELF_H
 #include "Creature.h"

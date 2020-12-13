@@ -1,6 +1,6 @@
 #pragma once
 #pragma
-// LAB 6 SHAFIE,Nima W
+// LAB 7 SHAFIE,Nima W
 #ifndef CYBERDEMON_H
 #define CYBERDEMON_H
 #include "Demon.h"

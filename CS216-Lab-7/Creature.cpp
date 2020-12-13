@@ -1,5 +1,5 @@
 #pragma
-// LAB 6 SHAFIE,Nima W
+// LAB 7 SHAFIE,Nima W
 #include <iostream>
 #include <string>
 #include "Creature.h"
@@ -30,7 +30,7 @@ Creature::Creature(const Creature& copyFromCreature)
 // destructor will simply reset values of strength and hitpoints to 1
 Creature::~Creature()
 {
-    cout << "\nCreature destructor run!";
+    //cout << "\nCreature destructor run!";
     strength = 1;
     hitpoints = 1;
 }
