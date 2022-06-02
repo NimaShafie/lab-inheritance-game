@@ -1,4 +1,3 @@
-#pragma once
 #pragma
 // LAB 7 SHAFIE,Nima W
 #ifndef CYBERDEMON_H
@@ -11,7 +10,7 @@ class Cyberdemon : public Demon {					// Human is a dervied class of Creature
 private:
 	int strength;									// how much damage we can inflict
 	int hitpoints;									// how much damage we can sustain
-	string getSpecies();							// returns type of species
+	string getSpecies();						// returns type of species
 public:
 	// constructors/destructors
 	Cyberdemon();									// default constructor

@@ -11,7 +11,7 @@ class Demon : public Creature {		// Demon is a dervied abstract class of Creatur
 private:
 	int strength;								// How much damage we can inflict
 	int hitpoints;								// How much damage we can sustain
-	virtual string getSpecies() = 0;			// returns type of species
+	string getSpecies();			// returns type of species
 public:
 	// constructor/destructors
 	Demon();									// default constructor

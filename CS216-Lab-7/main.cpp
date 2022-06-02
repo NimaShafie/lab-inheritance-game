@@ -1,4 +1,4 @@
-// LAB 7 SHAFIE,Nima W
+// LAB 7 SHAFIE,Nima
 #include <iostream>
 #include <string>
 #include "Creature.h"
@@ -12,8 +12,7 @@ using namespace std;
 
 void twoConstructorTest();
 
-int main()
-{
+int main() {
 	// In main, create an array of pointers to a base abstract Creatures class
 	int* ptrInt = nullptr;
 	int numOfDerivedClasses = 4;
@@ -26,8 +25,7 @@ int main()
 		creatureArray[2] = new Cyberdemon;
 		creatureArray[3] = new Balrog;
 		cout << "\n\n";
-		}
-	catch (bad_alloc&) {
+		} catch (bad_alloc&) {
 	cout << "Error: Dynamic Memory Allocation Failed.\nProgram Terminating.\n" << endl;
 	return 0;
 	}
@@ -56,36 +54,22 @@ int main()
 	int dmgCyberdemon = cyberdemon.getDamage();
 
 	cout << endl;
-
 	Balrog balrog;
 	int dmgBalrog = balrog.getDamage();
-
 	cout << "\n\n";
 
 	twoConstructorTest();
-
-	/*
-		creatureArray = new Creature * [numOfDerivedClasses];
-		creatureArray[0] = new Human;
-		creatureArray[1] = new Elf;
-		creatureArray[2] = new Cyberdemon;
-		creatureArray[3] = new Balrog;
-		cout << "\n\n";
-	*/
 	cout << "\n\n\nAttempting to delete array of pointers to base class:\n";
 	for (int i = 0; i < numOfDerivedClasses; i++) {
 		cout << "\nDeleting creatureArray[" << i << "] now";
 		delete creatureArray[i];
 	}
 	delete[]creatureArray;
-
 	cout << "\nNow program terminates (2 argument destructors will run past this line)\n" << endl;
-
 	return 0;
 }
 
-void twoConstructorTest()
-{
+void twoConstructorTest() {
 	// testing 2 argument constructors here
 	cout << "Testing 2 argument constructors here\n";
 	Human human2(25, 8);
